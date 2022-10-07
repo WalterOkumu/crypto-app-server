@@ -6,14 +6,14 @@ app.use(express.json())
 
 const cors = require('cors')
 
-app.use(cors({ origin: true }))
+app.use(cors())
 
 require('dotenv').config()
 
 const port = process.env.PORT || 8000
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Crypto Verse Backend API')
+  res.send('Welcome to the Crypto Backend API by <a href="https://github.com/WalterOkumu">Okumu Oriaro</a>')
 })
 
 const headers = {
